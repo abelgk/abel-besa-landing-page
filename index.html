@@ -57,8 +57,44 @@ a.button {
 a.button:hover { background:#e6c474; }
 ul { margin-left:20px; }
 footer {
-    margin-top:32px; font-size:14px; opacity:0.85; border-top:1px solid #DAB25C;
-    padding-top:12px; color:#D9D9D9;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* General link styling */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for all footer links */
+footer a:hover {
+  color: #d4af37; /* Gold hover */
+}
+
+/* Specific fix for phone links */
+footer a[href^="tel"] {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+footer a[href^="tel"]:hover {
+  color: #d4af37 !important;
+}
+
+/* Optional: horizontal line or subtle geometric divider */
+footer hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, #d4af37, transparent);
+  width: 60%;
+  margin: 20px auto;
 }
 @media (max-width:640px) {
     .container { padding:16px; }
@@ -106,8 +142,13 @@ footer {
 
 </div>
 
-<footer style="color:white;">
-    Besa Capital Holdings, Inc. · San Diego, CA · abelgkidanu31@gmail.com · 619-779-9613
+<footer>
+  <hr>
+  <p>© 2025 Besa Capital Holdings, Inc.</p>
+  <p>
+    Call us: <a href="tel:+16197799613">+1 (619) 779-9613</a><br>
+    Email: <a href="mailto:info@besacapital.com">info@besacapital.com</a>
+  </p>
 </footer>
 
 </div>
